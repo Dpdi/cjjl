@@ -221,6 +221,10 @@ a {
   font-size: 16px;
   background: rgba(255,79,76,1)
 }
+.n a:hover{
+  color: #fff;
+  opacity: 0.8;
+}
 .nx a{
   width: 266px;
   height: 45px;
@@ -256,6 +260,7 @@ a {
 .b_l fieldset legend{
   font-size: 16px;
   font-weight: 600;
+  padding-right: 15px;
 }
 .wb{
   margin-top: 24px;
@@ -298,6 +303,11 @@ a {
   color: #606060;
   font-family: PingFangSC-Regular;
 }
+.jianjie fieldset legend{
+  padding-right: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
 
 
 
@@ -338,8 +348,11 @@ a {
 .tongyi{
   border-bottom: 1px solid #F5F5F7;
   margin-bottom: 16px;
+  position: relative;
 }
-
+.tongyi:hover .tc{
+  display: block;
+}
 .tu{
   float: left;
 }
@@ -367,8 +380,50 @@ a {
   padding-bottom: 20px;
   font-family: PingFangSC-Regular;
 }
+.tc{
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  margin-left: 5%;
+  line-height: 97px;
+  text-align: center;
+  background: #f5f5f7;
+  display: none;
+}
+/* .tc a{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  border: 1px solid #ff4f4c;
+  color: #ff4f4c;
+  background: #fff;
+}
+.tc a:hover{
+  background: #ff4f4c;
+  color: #fff;
+  border: 1px solid #ff4f4c;
+} */
 
+.layui-field-title{
+  border: 1px solid #EEF0F5;
+}
 
+.site-demo-button button{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  border: 1px solid #ff4f4c;
+  color: #ff4f4c;
+  background: #fff;
+}
+.site-demo-button button:hover{
+  background: #ff4f4c;
+  color: #fff;
+  border: 1px solid #ff4f4c;
+}
 
 
 

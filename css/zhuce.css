@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "微软雅黑";
+}
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  z-index: 1;
+}
+
+/* ------------------------------------------------------------------------------- */
+.main{
+    width: 480px;
+    padding-top: 32px;
+    background: #FFFFFF;
+    color: #404040;
+    min-height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1);
+}
+.tu img{
+    display: block;
+    width: 37%;
+    margin: 0 auto;
+}
+
+
+
+
+.zcdl{
+    padding-top: 50px;
+}
+
+.a{
+
+}
+.a a{
+    color: #9B9B9B;
+}
+.layui-tab ul li:hover{
+  color: #ff4f4c;
+  font-weight: 600;
+}
+
+
+
+
+.xiamian{
+    width: 70%;
+    margin: 0 auto;
+}
+.xiamian fieldset legend{
+    color: #9c9c9c;
+    font-size: 13px;
+    margin-left: 115px;
+}
+
+
+.xm_t a  i{
+    float: left;
+    margin: 0 15%;
+    font-size: 60px;
+    color: #9c9c9c;
+}
+.xm_t a i p{
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.QQ i p,.WX i p{
+    text-align: center;
+}
+.WX  i:hover,.WX i p:hover{
+    color: green;
+}
+.QQ i:hover,.QQ i p:hover{
+    color: RED;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------客服---------------------------------------------------- */
+.kefu{
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    font-size: 13px; color:
+    rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1000000000;
+    right: 0px;
+    bottom: 0px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 80px;
+    margin-right: 30px;
+  }
+  .kefu img{
+    width: 64px;
+  }
+
+
+
