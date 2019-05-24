@@ -8,7 +8,30 @@
   <link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/mqnt.css">
   <link rel="stylesheet" href="layui/css/layui.css">
+  <script src="js/jquery-3.3.1.js"></script>
   <script type="text/javascript" src="layui/layui.js"></script>
+
+
+  <script>
+      $(document).ready(function(){
+          var oImg0=document.getElementById("app_btn");
+          var oImg=document.getElementById("img_1");
+          console.log(oImg);
+          $('#weixin_btn').click(function(){
+              oImg.src="img/default_wx_qr.png";
+              oImg0.style.background="#fff";
+              oImg0.style.color="#ff4f4c";
+              oImg0.style.border="1px solid #ff4f4c";
+          }
+          )
+          $('#app_btn').click(function(){
+              oImg.src="img/app.png";
+              oImg0.style.background="#ff4f4c";
+              oImg0.style.color="#fff";
+          }
+          )
+      })
+  </script>
 </head>
 <body>
 <!-- ------------------------------------------头部----------------------------------------------- -->
@@ -22,11 +45,11 @@
           <div class="nav_m layui-col-md7 layui-hide-xs">
               <ul>
                   <li>
-                      <a href="">简历模板</a>
-                      <a href="">求职信</a>
-                      <a href="">简历攻略</a>
-                      <a href="">简历诊断</a>
-                      <a href="mqnt.html">名企内推</a>
+                    <a href="jlmb.html">简历模板</a>
+                    <a href="qzx.html">求职信</a>
+                    <a href="jlgl.html">简历攻略</a>
+                    <a href="jlzd.html">简历诊断</a>
+                    <a href="mqnt.html">名企内推</a>
                   </li>
               </ul>
           </div>
@@ -37,10 +60,10 @@
                       <i class="layui-icon layui-icon-cellphone">
                           <div class="model">
                               <p>扫码下载App 同步编辑</p>
-                              <img src="img/app.png" alt="">
+                              <img src="img/app.png" id="img_1" alt="">
                               <div class="model_btn">
-                                  <a href="" class="layui-btn layui-btn-danger layui-btn-fluid">App</a>
-                                  <a href="" class="layui-btn layui-btn-danger layui-btn-fluid">微信版</a>
+                                  <a id="app_btn" class="layui-btn layui-btn-danger layui-btn-fluid">App</a>
+                                  <a class="layui-btn layui-btn-danger layui-btn-fluid" id="weixin_btn">微信版</a>
                               </div>
                           </div>
                       </i>
@@ -130,7 +153,7 @@
         <div class="xia">
           <div class="xia_main">
             <div class="yige">
-              <a href="sxs.html">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>产品部实习生招聘</span>
                   <i>面议</i>
@@ -145,7 +168,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="sxs.html">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>人力实习生</span>
                   <i>面议</i>
@@ -163,7 +186,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="sxs.html">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>Tech Writer（PM）实习生</span>
                   <i>面议</i>
@@ -178,7 +201,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="sxs.html">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>Java实习生</span>
                   <i>面议</i>
@@ -196,7 +219,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="sxs.html">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>债券融资岗实习生</span>
                   <i>面议</i>
@@ -211,7 +234,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="###">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>人力资源共享服务中心实习生</span>
                   <i>面议</i>
@@ -229,7 +252,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="###">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>短视频创意策划实习生</span>
                   <i>面议</i>
@@ -247,7 +270,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="###">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>TMT制造组实习</span>
                   <i>面议</i>
@@ -265,7 +288,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="###">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>开发实习生</span>
                   <i>面议</i>
@@ -283,7 +306,7 @@
               </a>
             </div>
             <div class="yige">
-              <a href="###">
+              <a href="mqnt2.html">
                 <div class="one">
                   <span>产品部实习生招聘</span>
                   <i>面议</i>
@@ -298,7 +321,7 @@
               </a>
             </div>
           </div>
-          <a class="anniu" href="###">登录查看你的内推职位</a>
+          <a class="anniu" href="login.html">登录查看你的内推职位</a>
         </div>
       </div>
     </div>
@@ -317,7 +340,7 @@
 
 
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="sxs.html">
+        <a href="mqnt2.html">
           <div class="one">
             <span>产品部实习生招聘</span>
             <i>面议</i>
@@ -332,7 +355,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="sxs.html">
+        <a href="mqnt2.html">
           <div class="one">
             <span>人力实习生</span>
             <i>面议</i>
@@ -350,7 +373,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="sxs.html">
+        <a href="mqnt2.html">
           <div class="one">
             <span>Tech Writer（PM）实习生</span>
             <i>面议</i>
@@ -365,7 +388,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="###">
+        <a href="mqnt2.html">
           <div class="one">
             <span>Java实习生</span>
             <i>面议</i>
@@ -383,7 +406,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="###">
+        <a href="mqnt2.html">
           <div class="one">
             <span>债券融资岗实习生</span>
             <i>面议</i>
@@ -398,7 +421,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="###">
+        <a href="mqnt2.html">
           <div class="one">
             <span>人力资源共享服务中心实习生</span>
             <i>面议</i>
@@ -416,7 +439,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="###">
+        <a href="mqnt2.html">
           <div class="one">
             <span>短视频创意策划实习生</span>
             <i>面议</i>
@@ -434,7 +457,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="###">
+        <a href="mqnt2.html">
           <div class="one">
             <span>TMT制造组实习</span>
             <i>面议</i>
@@ -452,7 +475,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="###">
+        <a href="mqnt2.html">
           <div class="one">
             <span>开发实习生</span>
             <i>面议</i>
@@ -470,7 +493,7 @@
         </a>
       </div>
       <div class="yige layui-hide-sm layui-col-xs12" id="shouji">
-        <a href="###">
+        <a href="mqnt2.html">
           <div class="one">
             <span>产品部实习生招聘</span>
             <i>面议</i>

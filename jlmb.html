@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>免费简历模板-英文简历模板-应届生简历模板专业制作 – 超级简历 WonderCV</title>
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+
+
+		@media screen and (max-width: 380px) {
+			.header .nav .nav_r .nav_r_icon i:nth-child(1) {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 1130px) {
+			.header .nav .nav_m {
+				display: none;
+			}
+
+			.header .nav .nav_r .nav_r_btn a:nth-child(2) {
+				display: none;
+			}
+
+			.header .nav .nav_r {
+				float: right;
+			}
+		}
+
+		.header {
+			width: 100%;
+			height: 56px;
+			position: fixed;
+			z-index: 999;
+			top: 0;
+			left: 0;
+			margin: 0;
+			background: #fff;
+		}
+
+		.header .nav {
+			width: 100%;
+			height: 56px;
+		}
+
+		.header .nav .nav_l {
+			height: 56px;
+			display: flex;
+			justify-content: center;
+			line-height: 56px;
+		}
+
+		.header .nav .nav_l a img {
+			width: 115px;
+		}
+
+		.header .nav .nav_m {
+			height: 56px;
+		}
+
+		.header .nav .nav_m ul {
+			width: 530px;
+			height: 56px;
+			margin: 0 auto;
+			line-height: 56px;
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.header .nav .nav_m ul li {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.header .nav .nav_m ul li a {
+			color: #404040;
+		}
+
+		.header .nav .nav_m ul li a:hover {
+			color: #ff4f4c;
+		}
+
+		.header .nav .nav_r {
+			height: 56px;
+			display: flex;
+		}
+
+		.header .nav .nav_r .nav_r_icon {
+			margin-left: 15px;
+			margin-top: 20px;
+		}
+
+		.header .nav .nav_r .nav_r_icon i {
+			margin-left: 10px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+		.header .nav .nav_r .nav_r_icon i:nth-child(2) {
+			display: inline-block;
+			height: 35px;
+		}
+
+		.header .nav .nav_r .nav_r_icon i:nth-child(2):hover .model {
+			display: block;
+		}
+
+		.header .nav .nav_r .model {
+			width: 240px;
+			height: 300px;
+			background-color: #fff;
+			border: 1px solid #DEDFE1;
+			border-radius: 4px;
+			cursor: pointer;
+			position: absolute;
+			left: -50px;
+			top: 100%;
+			z-index: 999;
+			display: none;
+		}
+
+		.header .nav .nav_r .model:hover {
+			display: block;
+		}
+
+		.header .nav .nav_r .model p {
+			text-align: center;
+			margin-top: 13px;
+			font-size: 14px;
+			color: #404040;
+			margin-bottom: 5px;
+		}
+
+		.header .nav .nav_r .model img {
+			width: 160px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.header .nav .nav_r .model .model_btn {
+			width: 150px;
+			margin: 0 auto;
+			margin-top: 5px;
+		}
+
+		.header .nav .nav_r .model .model_btn a:nth-child(1) {
+			background: #ff4f4c;
+		}
+
+		.header .nav .nav_r .model .model_btn a:nth-child(2) {
+			margin: 0;
+			background: #fff;
+			margin-top: 7px;
+			color: #ff4f4c;
+			border: 1px solid #ff4f4c;
+		}
+
+		.header .nav .nav_r .model .model_btn a:nth-child(1):hover {
+			background: #ff4f4c;
+			color: #fff;
+		}
+
+		.header .nav .nav_r .model .model_btn a:nth-child(2):hover {
+			background: #ff4f4c;
+			color: #fff;
+		}
+
+		.header .nav .nav_r span {
+			margin-left: 15px;
+			margin-top: 15px;
+			display: block;
+			height: 25px;
+			background: #dedfe1;
+			border: 1px solid #dedfe1;
+		}
+
+		.header .nav .nav_r .nav_r_btn {
+			margin-left: 15px;
+			line-height: 56px;
+		}
+
+		.header .nav .nav_r .nav_r_btn a {
+			display: inline-block;
+			width: 80px;
+			height: 32px;
+			line-height: 32px;
+			background: #ff4f4c;
+		}
+
+		.header .nav .nav_r .nav_r_btn a:nth-child(1) {
+			border: 1px solid #ff4f4c;
+			background: #fff;
+			color: #ff4f4c;
+		}
+
+		.header .nav .nav_r .nav_r_btn a:nth-child(1):hover {
+			background: #ff4f4c;
+			color: #fff;
+		}
+
+
+
+		.anniu {
+			width: 180px;
+			height: 40px;
+			margin: 0 auto;
+			margin-top: 80px;
+		}
+
+		.mb {
+			width: 100%;
+			height: 15px;
+			/* border: 1px soild red; */
+			margin: 0 auto;
+		}
+
+		.con {
+			height: auto;
+			background: #f5f5f7;
+		}
+
+		dl {
+			text-align: -webkit-center;
+		}
+
+		dt {
+			margin-top: 30px;
+		}
+
+		dd {
+			width: 200px;
+			text-align: center;
+			margin-top: 10px;
+			color: #909090;
+		}
+
+		.gudingkuai {
+			width: 60px;
+			height: 60px;
+			position: fixed;
+			right: 45px;
+			top: 830px;
+		}
+
+		.footer {
+			width: 100%;
+			height: 120px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 简历模板头部 -->
+	<div class="header">
+
+		<div class="nav layui-row">
+			<div class="nav_l layui-col-md2 layui-col-xs6">
+				<a href="index.html"><img src="img/logo.png" alt=""></a>
+			</div>
+
+			<div class="nav_m layui-col-md7 layui-hide-xs">
+				<ul>
+					<li>
+						<a href="jlmb.html">简历模板</a>
+						<a href="qzx.html">求职信</a>
+						<a href="jlgl.html">简历攻略</a>
+						<a href="jlzd.html">简历诊断</a>
+						<a href="mqnt.html">名企内推</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="nav_r layui-col-md3 layui-col-xs6">
+				<div class="nav_r_icon">
+					<i class="layui-icon layui-icon-find-fill"></i>
+					<i class="layui-icon layui-icon-cellphone">
+						<div class="model">
+							<p>扫码下载App 同步编辑</p>
+							<img src="img/app.png" id="img_1" alt="">
+							<div class="model_btn">
+								<a id="app_btn" class="layui-btn layui-btn-danger layui-btn-fluid">App</a>
+								<a class="layui-btn layui-btn-danger layui-btn-fluid" id="weixin_btn">微信版</a>
+							</div>
+						</div>
+					</i>
+				</div>
+				<span></span>
+				<div class="nav_r_btn">
+					<a class="layui-btn layui-btn-primary" href="login.html">登录</a>
+					<a class="layui-btn layui-btn-danger" href="login.html">注册</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- 简历模板内容 -->
+	<div class="con">
+		<div class="layui-row">
+			<div class="layui-col-md12 layui-col-xs12" style=" margin-top: 80px;">
+				<p style="font-size: 30px; text-align: center;">选择你的简历模板</p>
+			</div>
+			<div class="layui-col-md12 layui-col-xs12" style=" margin-top: 30px;">
+				<p style="text-align: center; font-size: 16px; color: #909090;">选对专业的简历模板，帮你提高 2 倍求职成功率</p>
+			</div>
+		</div>
+		<div class="layui-row"
+			style="margin-top: 50px; text-align: center; display: flex; justify-content: space-around;">
+			<div class="layui-col-md2 layui-hide-xs" style="height: 280px; background: #ffffff; border-radius: 25px; ">
+				<dl>
+					<img src="img/zero-exp-icon.png" style="width: 60px; height: 55px; margin-top: 50px;">
+					<dt>
+						<h3>零经验实习模板</h3>
+					</dt>
+					<dd>
+						<p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="layui-col-md2 layui-hide-xs" style="height: 280px; border-radius: 25px;  background: #ffffff;">
+				<dl>
+					<img src="img/zero-exp-icon.png" style="width: 60px; height: 55px; margin-top: 50px;">
+					<dt>
+						<h3>零经验实习模板</h3>
+					</dt>
+					<dd>
+						<p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="layui-col-md2 layui-hide-xs" style="height: 280px; border-radius: 25px;  background: #ffffff;">
+				<dl>
+					<img src="img/zero-exp-icon.png" style="width: 60px; height: 55px; margin-top: 50px;">
+					<dt>
+						<h3>零经验实习模板</h3>
+					</dt>
+					<dd>
+						<p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="layui-col-md2 layui-hide-xs" style="height: 280px; border-radius: 25px;  background: #ffffff;">
+				<dl>
+					<img src="img/zero-exp-icon.png" style="width: 60px; height: 55px; margin-top: 50px;">
+					<dt>
+						<h3>零经验实习模板</h3>
+					</dt>
+					<dd>
+						<p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="layui-row"
+			style="margin-top: 40px; text-align: center; display: flex; justify-content: space-around;">
+			<div class="layui-col-md2 layui-hide-xs" style="height: 280px; border-radius: 25px;  background: #ffffff;">
+				<dl>
+					<img src="img/zero-exp-icon.png" style="width: 60px; height: 55px; margin-top: 50px;">
+					<dt>
+						<h3>零经验实习模板</h3>
+					</dt>
+					<dd>
+						<p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="layui-col-md2 layui-hide-xs" style="height: 280px; border-radius: 25px;  background: #ffffff;">
+				<dl>
+					<img src="img/zero-exp-icon.png" style="width: 60px; height: 55px; margin-top: 50px;">
+					<dt>
+						<h3>零经验实习模板</h3>
+					</dt>
+					<dd>
+						<p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="layui-col-md2 layui-hide-xs" style="height: 280px; border-radius: 25px;  background: #ffffff;">
+				<dl>
+					<img src="img/zero-exp-icon.png" style="width: 60px; height: 55px; margin-top: 50px;">
+					<dt>
+						<h3>零经验实习模板</h3>
+					</dt>
+					<dd>
+						<p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="layui-col-md2 layui-hide-xs" style="height: 280px; border-radius: 25px;  background: #ffffff;">
+				<dl>
+					<img src="img/zero-exp-icon.png" style="width: 60px; height: 55px; margin-top: 50px;">
+					<dt>
+						<h3>零经验实习模板</h3>
+					</dt>
+					<dd>
+						<p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="anniu">
+			<div class="layui-row">
+				<div class="layui-col-md12 layui-col-xs12">
+					<a href="#"><button class="layui-btn layui-btn-fluid"
+							style="width: 100%; height: 50px; background: #ff4f4c; font-size: 17px; font-weight: bold;">定制你的模板</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="layui-row ">
+			<div class="layui-col-md12 layui-col-sm12 layui-col-xs12" style=" margin-top: 120px;">
+				<p style="font-size: 25px; text-align: center;">使用超级简历拿到名企Offer</p>
+			</div>
+			<div class="layui-col-md12 layui-col-xs12" style=" margin-top: 20px;">
+				<p style="text-align: center; color: #909090;">已经通过超级简历，成功入职投行/咨询/BAT/五百强名企的大牛简历分享</p>
+			</div>
+		</div>
+		<div class="layui-row layui-col-space15" id="layerDemo" style="margin-top: 50px; text-align: center;">
+			<div class="layui-col-md3 layui-hide-xs" style="height: 395px; margin-top: 10px;">
+				<button data-method="notice" class="layui-btn" style="background: #F5F5F7;">
+					<img src="img/example_cv4_cn.jpg"
+						style="width: 280px; height: 390px; border: 1px solid #979797;">
+					<p style="color: #909090; margin-top: 10px; text-align: center; ">2018 纽约大学硕士 | 中信证券投行部</p>
+				</button>
+			</div>
+			<div class="layui-col-md3 layui-hide-xs" style="height: 395px; margin-top: 10px;">
+				<button data-method="notice" class="layui-btn" style="background: #F5F5F7;">
+					<img src="img/example_cv4_cn.jpg"
+						style="width: 280px; height: 390px; border: 1px solid #979797;">
+					<p style="color: #909090; margin-top: 10px; text-align: center;">2019 清华应届生 | 腾讯产品经理全职</p>
+				</button>
+			</div>
+			<div class="layui-col-md3 layui-hide-xs" style="height: 395px; margin-top: 10px;">
+				<button data-method="notice" class="layui-btn" style="background: #F5F5F7;">
+					<img src="img/example_cv4_cn.jpg"
+						style="width: 280px; height: 390px; border: 1px solid #979797;">
+					<p style="color: #909090; margin-top: 10px; text-align: center;">2020 北大硕士 | 麦肯锡咨询实习生</p>
+				</button>
+			</div>
+			<div class="layui-col-md3 layui-hide-xs" style="height: 395px; margin-top: 10px;">
+				<button data-method="notice" class="layui-btn" style="background: #F5F5F7;">
+					<img src="img/example_cv4_cn.jpg"
+						style="width: 280px; height: 390px; border: 1px solid #979797;">
+					<p style="color: #909090; margin-top: 10px; text-align: center;">6 年工作经验 | 滴滴人力资源总监</p>
+				</button>
+			</div>
+
+
+			<!-- 手机端 -->
+			<div class="layui-col-xs6 layui-col-md-offset2 layui-hide-md" style="height: 100%; ">
+				<button data-method="notice" class="layui-btn" style="background: #F5F5F7;"><img
+						src="img/example_cv4_cn.jpg" style="width: 100%; border: 1px solid #979797;"></button>
+				<p style="color: #909090; margin-top: 220px; text-align: center; ">2018 纽约大学硕士 | 中信证券投行部</p>
+			</div>
+			<div class="layui-col-xs6 layui-hide-md" style="height: 100%; ">
+				<button data-method="notice" class="layui-btn" style="background: #F5F5F7;"><img
+						src="img/example_cv4_cn.jpg" style="width: 100%; border: 1px solid #979797;"></button>
+				<p style="color: #909090; margin-top: 220px; text-align: center;">2019 清华应届生 | 腾讯产品经理全职</p>
+			</div>
+
+			<div class="layui-col-xs6 layui-hide-md" style="height: 100%; margin-top: 20px;">
+				<button data-method="notice" class="layui-btn" style="background: #F5F5F7;"><img
+						src="img/example_cv4_cn.jpg" style="width: 100%; border: 1px solid #979797;"></button>
+				<p style="color: #909090; margin-top: 220px; text-align: center;">2020 北大硕士 | 麦肯锡咨询实习生</p>
+			</div>
+			<div class="layui-col-xs6 layui-hide-md" style="height: 100%;margin-top: 20px; ">
+				<button data-method="notice" class="layui-btn" style="background: #F5F5F7;"><img
+						src="img/example_cv4_cn.jpg" style="width: 100%; border: 1px solid #979797;"></button>
+				<p style="color: #909090; margin-top: 220px; text-align: center;">6 年工作经验 | 滴滴人力资源总监</p>
+			</div>
+		</div>
+
+		<div class="anniu">
+			<div class="layui-row">
+				<div class="layui-col-md12 layui-col-xs12">
+					<a href="#"><button class="layui-btn layui-btn-fluid"
+							style="width: 100%; height: 50px; background: #ff4f4c; font-size: 17px; font-weight: bold;">更多大牛简历</button></a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 固定块 -->
+		<div class="gudingkuai">
+			<img src="img/custom_service_btn.png" style="width: 60px;height: 60px;">
+		</div>
+
+
+		<!-- 弹出层JQ -->
+		<script>
+			layui.use('layer', function () { //独立版的layer无需执行这一句
+				var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+
+				//触发事件
+				var active = {
+					setTop: function () {
+						var that = this;
+					}
+
+					, notice: function () {
+						//示范一个公告层
+						layer.open({
+							type: 1
+							, title: false //不显示标题栏
+							, closeBtn: false
+							, area: '500px;'
+							, shade: 0.8
+							, id: 'LAY_layuipro' //设定一个id，防止重复弹出
+							, btn: ['关闭']
+							, btnAlign: 'c'
+							, moveType: 1 //拖拽模式，0或者1
+							, content: '<img src="img/example_cv4_cn.jpg" style="width: 500px; height: 710px;"> <button class="layui-btn layui-btn-fluid" style="width:140px; height: 40px; margin-left:180px; margin-top:-650px; background: #ff4f4c; font-size: 15px; font-weight: bold;">使用模板</button>'
+						});
+					}
+				};
+
+				$('#layerDemo .layui-btn').on('click', function () {
+					var othis = $(this), method = othis.data('method');
+					active[method] ? active[method].call(this, othis) : '';
+				});
+			});
+		</script>
+
+
+
+
+
+
+		<!-- 底部 -->
+		<div class="footer">
+
+		</div>
+	</div>
+</body>
+
+</html>

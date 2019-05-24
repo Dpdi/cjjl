@@ -211,7 +211,7 @@ a {
   margin: 0 40px;
 }
 .n a{
-  width: 266px;
+  width: 100%;
   height: 45px;
   line-height: 45px;
   display: block;
@@ -226,7 +226,7 @@ a {
   opacity: 0.8;
 }
 .nx a{
-  width: 266px;
+  width: 100%;
   height: 45px;
   line-height: 45px;
   display: block;

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>专业求职邮箱 - 超级简历 WonderCV</title>
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.con {
+			background: #f5f5f7;
+		}
+
+		.anniu {
+			width: 150px;
+			height: 40px;
+			margin: 0 auto;
+			margin-top: 80px;
+		}
+
+
+
+		.header {
+			width: 100%;
+			height: 56px;
+			position: fixed;
+			z-index: 999;
+			top: 0;
+			left: 0;
+			margin: 0;
+			background: #fff;
+		}
+
+		.header .nav {
+			width: 100%;
+			height: 56px;
+		}
+
+		.header .nav .nav_l {
+			height: 56px;
+			display: flex;
+			justify-content: center;
+			line-height: 56px;
+		}
+
+		.header .nav .nav_l a img {
+			width: 115px;
+		}
+
+		.header .nav .nav_m {
+			height: 56px;
+		}
+
+		.header .nav .nav_m ul {
+			width: 530px;
+			height: 56px;
+			margin: 0 auto;
+			line-height: 56px;
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.header .nav .nav_m ul li {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.header .nav .nav_m ul li a {
+			color: #404040;
+		}
+
+		.header .nav .nav_m ul li a:hover {
+			color: #ff4f4c;
+		}
+
+		.header .nav .nav_r {
+			height: 56px;
+			display: flex;
+		}
+
+		.header .nav .nav_r .nav_r_icon {
+			margin-left: 15px;
+			margin-top: 20px;
+		}
+
+		.header .nav .nav_r .nav_r_icon i {
+			margin-left: 10px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+		.header .nav .nav_r .nav_r_icon i:nth-child(2) {
+			display: inline-block;
+			height: 35px;
+		}
+
+		.header .nav .nav_r .nav_r_icon i:nth-child(2):hover .model {
+			display: block;
+		}
+
+		.header .nav .nav_r .model {
+			width: 240px;
+			height: 300px;
+			background-color: #fff;
+			border: 1px solid #DEDFE1;
+			border-radius: 4px;
+			cursor: pointer;
+			position: absolute;
+			left: -50px;
+			top: 100%;
+			z-index: 999;
+			display: none;
+		}
+
+		.header .nav .nav_r .model:hover {
+			display: block;
+		}
+
+		.header .nav .nav_r .model p {
+			text-align: center;
+			margin-top: 13px;
+			font-size: 14px;
+			color: #404040;
+			margin-bottom: 5px;
+		}
+
+		.header .nav .nav_r .model img {
+			width: 160px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.header .nav .nav_r .model .model_btn {
+			width: 150px;
+			margin: 0 auto;
+			margin-top: 5px;
+		}
+
+		.header .nav .nav_r .model .model_btn a:nth-child(1) {
+			background: #ff4f4c;
+		}
+
+		.header .nav .nav_r .model .model_btn a:nth-child(2) {
+			margin: 0;
+			background: #fff;
+			margin-top: 7px;
+			color: #ff4f4c;
+			border: 1px solid #ff4f4c;
+		}
+
+		.header .nav .nav_r .model .model_btn a:nth-child(1):hover {
+			background: #ff4f4c;
+			color: #fff;
+		}
+
+		.header .nav .nav_r .model .model_btn a:nth-child(2):hover {
+			background: #ff4f4c;
+			color: #fff;
+		}
+
+		.header .nav .nav_r span {
+			margin-left: 15px;
+			margin-top: 15px;
+			display: block;
+			height: 25px;
+			background: #dedfe1;
+			border: 1px solid #dedfe1;
+		}
+
+		.header .nav .nav_r .nav_r_btn {
+			margin-left: 15px;
+			line-height: 56px;
+		}
+
+		.header .nav .nav_r .nav_r_btn a {
+			display: inline-block;
+			width: 80px;
+			height: 32px;
+			line-height: 32px;
+			background: #ff4f4c;
+		}
+
+		.header .nav .nav_r .nav_r_btn a:nth-child(1) {
+			border: 1px solid #ff4f4c;
+			background: #fff;
+			color: #ff4f4c;
+		}
+
+		.header .nav .nav_r .nav_r_btn a:nth-child(1):hover {
+			background: #ff4f4c;
+			color: #fff;
+		}
+
+		@media screen and (max-width: 380px) {
+			.header .nav .nav_r .nav_r_icon i:nth-child(1) {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 1130px) {
+			.header .nav .nav_m {
+				display: none;
+			}
+
+			.header .nav .nav_r .nav_r_btn a:nth-child(2) {
+				display: none;
+			}
+
+			.header .nav .nav_r {
+				float: right;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 求职信头部 -->
+	<div class="header" style="background: #fff;">
+
+		<div class="nav layui-row">
+			<div class="nav_l layui-col-md2 layui-col-xs6">
+				<a href="index.html"><img src="img/logo.png" alt=""></a>
+			</div>
+
+			<div class="nav_m layui-col-md7 layui-hide-xs">
+				<ul>
+					<li>
+						<a href="jlmb.html">简历模板</a>
+						<a href="qzx.html">求职信</a>
+						<a href="jlgl.html">简历攻略</a>
+						<a href="jlzd.html">简历诊断</a>
+						<a href="mqnt.html">名企内推</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="nav_r layui-col-md3 layui-col-xs6">
+				<div class="nav_r_icon">
+					<i class="layui-icon layui-icon-find-fill"></i>
+					<i class="layui-icon layui-icon-cellphone">
+						<div class="model">
+							<p>扫码下载App 同步编辑</p>
+							<img src="img/app.png" id="img_1" alt="">
+							<div class="model_btn">
+								<a id="app_btn" class="layui-btn layui-btn-danger layui-btn-fluid">App</a>
+								<a class="layui-btn layui-btn-danger layui-btn-fluid" id="weixin_btn">微信版</a>
+							</div>
+						</div>
+					</i>
+				</div>
+				<span></span>
+				<div class="nav_r_btn">
+					<a class="layui-btn layui-btn-primary" href="login.html">登录</a>
+					<a class="layui-btn layui-btn-danger" href="login.html">注册</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- 简历模板内容 -->
+	<div class="con" style="background: #f5f5f7;">
+		<div class="layui-row">
+			<div class="layui-col-md12 layui-col-xs12" style=" margin-top: 80px;">
+				<p style="font-size: 30px; text-align: center;">求职信 Jobmail.vip 专业邮箱</p>
+			</div>
+			<div class="layui-col-md12 layui-col-xs12" style=" margin-top: 30px;">
+				<p style="text-align: center; font-size: 16px; color: #909090;">提供多场景求职邮件模板，用一封吸引 HR 的求职信，助你大幅提高简历通过率
+				</p>
+			</div>
+		</div>
+		<div class="anniu">
+			<div class="layui-row">
+				<div class="layui-col-md12 layui-col-xs12">
+					<a href="#"><button class="layui-btn layui-btn-fluid"
+							style="width: 100%; height: 40px; background: #ff4f4c; font-size: 17px; font-weight: bold;">立即使用</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="layui-row" style="margin-top: 20px;">
+			<div class="layui-col-md9 layui-col-md-offset1 layui-col-xs12">
+				<img src="img/2@2x.png" style="width: 113%;">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,532 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    background: #fbfbfb;
+}
+@media screen and (max-width: 380px) {
+        .header .nav .nav_r .nav_r_icon i:nth-child(1){
+            display: none;
+        }
+}
+@media screen and (max-width: 1130px) {
+    .header .nav .nav_m {
+        display:none;
+    }
+    .header .nav .nav_r .nav_r_btn a:nth-child(2){
+        display:none;
+    }
+    .header .nav .nav_r{
+        float:right;
+    }
+}
+
+
+/* 遮罩层 */
+
+#mask{
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#mask_img{
+    position: fixed;
+    left: 35%;
+    top: 18%;
+    z-index: 1001;
+}
+.mask_con{
+    width: 870px;
+    height: 1182px;
+    background: url(../img/bank-temp-cn@2x.png) no-repeat;
+    background-size: 55% 46%;
+    position: relative;
+}
+.mask_con .mask_con_btn a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin:0 auto;
+    margin-left: 300px;
+}
+.mask_con .layui-btn{
+    margin-left: 22%;
+    margin-top: 40%;
+}
+.mask_con .layui-btn-primary{
+    background: #ff4f4c;
+    color: #fff;
+    border: 1px solid#ff4f4c;
+}
+.mask_con .layui-btn-primary:hover{
+    color: #fff;
+    border: 1px solid#ff4f4c;
+}
+#close{
+    width: 22px;
+    height: 45px;
+    background: url(../img/close.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 45%;
+    top: -42px;
+}
+
+
+.header{
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: #fff;
+}
+.header .nav{
+    width: 100%;
+    height: 56px;
+}
+.header .nav .nav_l{
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    line-height: 56px;
+}
+.header .nav .nav_l a img{
+    width: 115px;
+}
+.header .nav .nav_m{
+    height: 56px;
+}
+.header .nav .nav_m ul{
+    width: 530px;
+    height: 56px;
+    margin: 0 auto;
+    line-height: 56px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.header .nav .nav_m ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header .nav .nav_m ul li a{ 
+    color: #404040;
+}
+.header .nav .nav_m ul li a:hover{
+    color: #ff4f4c;
+}
+.header .nav .nav_r{
+    height: 56px;
+    display: flex;
+}
+.header .nav .nav_r .nav_r_icon{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.header .nav .nav_r .nav_r_icon i{
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}.header .nav .nav_r .nav_r_icon i:nth-child(2){
+    display: inline-block;
+    height: 35px;
+}
+.header .nav .nav_r .nav_r_icon i:nth-child(2):hover .model{
+    display: block;
+}
+.header .nav .nav_r .model{
+    width: 240px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #DEDFE1;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    left: -50px;
+    top: 100%;
+    z-index: 999;
+    display: none;
+}
+.header .nav .nav_r .model:hover{
+    display: block;
+}
+.header .nav .nav_r .model p{
+    text-align: center;
+    margin-top: 13px;
+    font-size: 14px;
+    color: #404040;
+    margin-bottom: 5px;
+}
+.header .nav .nav_r .model img{   
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.header .nav .nav_r .model .model_btn{
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.header .nav .nav_r .model .model_btn a:nth-child(1){
+    background: #ff4f4c;
+}
+.header .nav .nav_r .model .model_btn a:nth-child(2){
+    margin: 0;
+    background: #fff;
+    margin-top: 7px;
+    color: #ff4f4c;
+    border: 1px solid #ff4f4c;
+}
+.header .nav .nav_r .model .model_btn a:nth-child(1):hover{
+    background: #ff4f4c;
+    color: #fff;
+}
+.header .nav .nav_r .model .model_btn a:nth-child(2):hover{
+    background: #ff4f4c;
+    color: #fff;
+}
+.header .nav .nav_r span{
+    margin-left: 15px;
+    margin-top: 15px;
+    display: block;
+    height: 25px;
+    background: #dedfe1;
+    border: 1px solid #dedfe1;
+}
+.header .nav .nav_r .nav_r_btn{
+    margin-left: 15px;
+    line-height: 56px;
+}
+.header .nav .nav_r .nav_r_btn a{
+    display: inline-block;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    background: #ff4f4c;
+}
+.header .nav .nav_r .nav_r_btn a:nth-child(1){
+    border: 1px solid #ff4f4c;
+    background: #fff;
+    color: #ff4f4c;
+}
+.header .nav .nav_r .nav_r_btn a:nth-child(1):hover{
+    background: #ff4f4c;
+    color: #fff;
+}
+.banner{
+    width: 100%;
+    height: auto;
+    background: url(../img/banner.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 58px;
+}
+.banner .banner_box{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner .banner_box h1{
+    display: block;
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    color:#404040;
+    margin: 0.67em 0;
+    line-height: 1.1;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 780px) {
+    .banner{
+        background-size:  auto 100%;
+        background-position-x: 50%;
+    }
+    .banner .banner_box h1{
+        font-size: 30px;
+        margin: 0 auto;
+        width: 268px;
+    }
+    .banner .banner_box p{
+        display: none;
+    }
+    .banner .banner_box #btn{
+        width: 260px;
+    }
+    .banner .banner_box a{
+        width: 260px;
+    }
+    .banner .banner_box img{
+        display: none;
+    }
+    .video video{
+        width: 80%;
+    }
+    .bg{
+        display: none;
+    }
+    .moban {
+        margin-top: -250px;
+    }
+    .moban .moban_tit h1{
+        font-size: 21px;
+    }
+    .moban .moban_tit p{
+        font-size: 12px;
+    }
+    #ddd{
+        padding-bottom: 40px;
+    }
+}
+.banner .banner_box p{
+    font-size: 16px;
+    margin-top: 18px;
+    color: #9c9c9c;
+    text-align: center;
+}
+.banner .banner_box #box_btn{
+    margin: 0 auto;
+    width: 300px;
+}
+.banner .banner_box a{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    background-image: linear-gradient(-95deg, #FF3D3D, #FF3F3D 40%, #FF813A);
+    box-shadow: 0px 7px 13px -6px #ff4f4c;
+    border-radius: 4px;
+    line-height: 48px;
+    height: 48px;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-top: 46px;
+}
+.banner .banner_box img{
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 35px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.video{
+    position: relative;
+    z-index: 90;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.video video{
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 5px 32px 0 rgba(0,0,0,0.2);
+    border-radius: 16px;
+}
+.bg{
+    width: 100%;
+    height: 280px;
+    z-index: 89;
+    margin-top: -120px;
+    position: absolute;
+    background-image: linear-gradient(-90deg, #FF3D3D 0%, #FF813A 100%);
+}
+.bg .bg_box{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 170px;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.bg img{
+    width: 41px;
+}
+.bg .bg_box span{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    top: 3px;
+}
+.moban{
+    width: 100%;
+    padding-top: 300px;
+    background: #f1f1f1;
+}
+.moban .moban_tit{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.moban .moban_tit h1{
+    color: #3f3f3f;
+}
+.moban .moban_tit p{
+    color: #909090;
+    margin-top: 18px;
+}
+.moban .moban_box{
+    position: relative;
+}
+.moban .moban_1{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.moban .moban_1 div{
+    width: 240px;
+    height: 240px;
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+.moban .moban_1 div:hover .tx{
+    display: block;
+}
+.moban .moban_1 div .tx{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.moban .moban_1 div .tx a{
+    color:#ff4f4c;
+    background: #fff;
+    border: 1px solid #ff4f4c;
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.moban .moban_1 div .tx a:nth-child(1){
+    margin-top: 70px;
+}
+.moban .moban_1 div .tx a:hover{
+    background: #ff4f4c;
+    color:#fff;
+}
+.moban .moban_1 img{
+    display: block;
+    margin: 0 auto;
+    width: 72px;
+    margin-top: 40px;
+}
+.moban .moban_1 p{
+    text-align: center;
+    color: #9c9c9c;
+    font-size: 14px;
+    width: 196px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+.moban .moban_1 span{
+    display: block;
+    margin-top: 26px;
+}
+.moban .shouji{
+    width: 80%;
+    position: relative;
+    top: 0;
+    left: 10%;
+}
+.moban .shouji ul{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.moban .shouji ul li{
+    text-align: center;
+}
+.moban .shouji ul li p{
+    margin-top: 9px;
+    font-size: 13px;
+    color: #3f3f3f;
+}
+.moban .shouji img{
+    width: 48px;
+}
+.free{
+    margin: 0 auto;
+    width: 800px;
+    height: 100px;
+    border-radius: 4px;
+    background-color: #FF4F4C;
+    box-shadow: 0px 0px 20px #ddd;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+.free a{
+    display: inline-block;
+    width: 134px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 2px;
+    color: #FF4F4C;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+.free span{
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 14px;
+}
+.free a:hover{
+    border: 1px solid #fff;
+    color: #FF4F4C;
+}
+.footer{
+    width: 100%;
+    background: #e3e3e4;
+    border-radius: 800px;
+    height: 500px;
+    border: 1px solid #e3e3e4;
+    border-radius: 350% 350% 0 0/100% 100% 0 0;
+}
+
+
+
+
+.tuijian a{
+    display: block;
+    padding: 5px 0;
+}
+.zhengti{
+    margin: auto;
+}
+.chentxt{
+    margin: auto;
+}
+.zydibu{
+    height: 100px;
+    width: 800px;
+    margin: auto;
+    border-radius: 5px;
+}
+.xsdibu{
+    margin: auto;
+    text-align: center;
+}
