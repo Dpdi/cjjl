@@ -14,77 +14,7 @@
     <title>超级简历 - HR专家推荐的智能简历工具-英文简历模板-专业求职简历模板-免费下载</title>
 
 
-    <script type="text/javascript">
-        window.onload=function(){
-            let obtn=document.getElementById("moban_btn");
-            let dzbtn=document.getElementById("dz_btn");
-            let txbox=document.getElementById("tx_box");
-            obtn.onclick=function(){
-                //获取页面的高度和宽度
-                var sheight=document.documentElement.scrollHeight;
-                var swidth=document.documentElement.scrollWidth;
-
-                // 可视区域的高度
-                var wheight=document.documentElement.clientHeight;
-
-
-                // 遮罩层
-                var omask=document.createElement("div");
-                    omask.id="mask";
-                    omask.style.height=sheight+"px";
-                    omask.style.width=swidth+"px";
-                    document.body.appendChild(omask);
-                
-                var mask_img=document.createElement("div");
-                    mask_img.id="mask_img";
-                    mask_img.innerHTML="<div class='mask_con' id='mask_c'><div id='close'></div></div>"
-                    document.body.appendChild(mask_img);
-                    
-                var mask_c=document.getElementById('mask_c');
-
-                var mask_con_btn=document.createElement("div");
-                    mask_con_btn.id="mask_con_btn";
-                    mask_con_btn.innerHTML="<a href='zhuce.html' class='layui-btn layui-btn-primary'>使用模板</a>"
-                    mask_c.appendChild(mask_con_btn);
-                    // 获取 mask_img 的宽度和高度
-
-                var dheight=mask_img.offsetHeight;
-                var dwidth=mask_img.offsetWidth;
-
-                var close=document.getElementById("close");
-                close.onclick=function(){
-                    document.body.removeChild(omask);
-                    document.body.removeChild(mask_img);
-                }
-                }
-
-                dzbtn.onclick=function(){
-                var sheight=document.documentElement.scrollHeight;
-                var swidth=document.documentElement.scrollWidth;
-
-                // 可视区域的高度
-                var wheight=document.documentElement.clientHeight;
-
-                var omask=document.createElement("div");
-                    omask.id="mask";
-                    omask.style.height=sheight+"px";
-                    omask.style.width=swidth+"px";
-                    document.body.appendChild(omask);
-                    txbox.style.display="block";
-                    omask.onclick=function(){
-                    document.body.removeChild(omask);
-                    txbox.style.display="none";
-                }
-
-                
-            }
-                
-        }
-            
-            
-         
-            
-    </script>
+    
 
 </head>
 <body>
@@ -177,7 +107,7 @@
                     <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
                     <div class="tx">
                         <a  class="layui-btn" id="moban_btn">中文模板</a>
-                        <a  class="layui-btn" id="moban_btn">英文模板</a>
+                        <a  class="layui-btn" id="moban_btn2">英文模板</a>
                     </div>
                 </div>
                 <div>
@@ -185,8 +115,8 @@
                         <span>零经验学习模板</span>
                         <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
                         <div class="tx">
-                                <a  class="layui-btn" id="moban_btn">中文模板</a>
-                                <a  class="layui-btn" id="moban_btn">英文模板</a>
+                                <a  class="layui-btn" id="moban_btn3">中文模板</a>
+                                <a  class="layui-btn" id="moban_btn4">英文模板</a>
                         </div>
                 </div>
                 <div>
@@ -194,8 +124,8 @@
                         <span>零经验学习模板</span>
                         <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
                         <div class="tx">
-                                <a id="moban_btn" class="layui-btn">中文模板</a>
-                                <a id="moban_btn" class="layui-btn">英文模板</a>
+                                <a id="moban_btn5" class="layui-btn">中文模板</a>
+                                <a id="moban_btn6" class="layui-btn">英文模板</a>
                         </div>
                 </div>
                 <div>
@@ -203,8 +133,8 @@
                         <span>零经验学习模板</span>
                         <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
                         <div class="tx">
-                                <a id="moban_btn" class="layui-btn">中文模板</a>
-                                <a id="moban_btn" class="layui-btn">英文模板</a>
+                                <a id="moban_btn7" class="layui-btn">中文模板</a>
+                                <a id="moban_btn8" class="layui-btn">英文模板</a>
                         </div>
                 </div>
             </div>
@@ -215,8 +145,8 @@
                         <span>零经验学习模板</span>
                         <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
                         <div class="tx">
-                                <a id="moban_btn" class="layui-btn">中文模板</a>
-                                <a id="moban_btn" class="layui-btn">英文模板</a>
+                                <a id="moban_btn9" class="layui-btn">中文模板</a>
+                                <a id="moban_btn10" class="layui-btn">英文模板</a>
                         </div>
                     </div>
                     <div>
@@ -224,8 +154,8 @@
                             <span>零经验学习模板</span>
                             <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
                             <div class="tx">
-                                    <a id="moban_btn" class="layui-btn">中文模板</a>
-                                    <a id="moban_btn" class="layui-btn">英文模板</a>
+                                    <a id="moban_btn11" class="layui-btn">中文模板</a>
+                                    <a id="moban_btn12" class="layui-btn">英文模板</a>
                             </div>
                     </div>
                     <div>
@@ -233,8 +163,8 @@
                             <span>零经验学习模板</span>
                             <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
                             <div class="tx">
-                                    <a id="moban_btn" class="layui-btn">中文模板</a>
-                                    <a id="moban_btn" class="layui-btn">英文模板</a>
+                                    <a id="moban_btn13" class="layui-btn">中文模板</a>
+                                    <a id="moban_btn14" class="layui-btn">英文模板</a>
                             </div>
                     </div>
                     <div>
@@ -242,8 +172,8 @@
                             <span>零经验学习模板</span>
                             <p>此模板适用于学生找实习，第一次工作，没有实习经历的同学</p>
                             <div class="tx">
-                                    <a id="moban_btn" class="layui-btn">中文模板</a>
-                                    <a id="moban_btn" class="layui-btn">英文模板</a>
+                                    <a id="moban_btn15" class="layui-btn">中文模板</a>
+                                    <a id="moban_btn16" class="layui-btn">英文模板</a>
                             </div>
                     </div>
             </div>
@@ -291,6 +221,20 @@
 
         <!-- 穆童 -->
         <div class="zhengti" style="width: 80%;margin-top: 200px;">
+
+                <div id="tx_box0" class="box" style="width: 400px;height: 400px; position: absolute;z-index: 1001;left: 37%;display: none;">
+                        <div class="box_m" style="top:3%; height: auto; border: 0">
+                                <img src="img/weixin.png" alt="">
+                                <div class="box_m1"  style="background: #fff;">
+                                    <i class="layui-icon layui-icon-login-wechat" style="font-size: 28px; color: #62b900;"></i>  
+                                    <span style="color: #757575;">微信扫码 快速登录</span>
+                                </div>
+                        </div>
+                        <div class="box_d" style="margin-top: 40px;">
+                            <a href="zhuce.html">其他方式注册/登录</a>
+                        </div>
+                </div>
+
                 <div class="layui-row" style="width: 100%">
                     <div class="layui-col-md6 layui-col-xs12" >
                         <img src="layui\image\HRtuijian.png"
@@ -306,7 +250,7 @@
                             <div style="width: 85px;height:24px;"><p style="text-align: center; color:#FF4F4C;background:#ffe6e6;border-radius:10px">简单</p></div>
                             <div><p style="font-size: 28px;margin-top: 5px;color: #404040;">超级简历由人力资源专家<br/>设计并推荐</p></div>
                             <div><p style="color: rgb(95, 95, 95);margin-top: 20px">简历是为了展示你专业的工作能力，而市面上大量花哨而不适<br/>用的模板，不但浪费选择的时间和购买模板的金钱，甚至会给<br/>你的简历减分。<br/>超级简历获得了著名人力资源公司、金融机构、大型互联网公<br/>司的 HR 和业务部门负责招聘负责人的强烈认可和推荐。<br/>简历，只要做一份专业的。</p></div>
-                            <div style="margin-top: 50px;"><button class="layui-btn layui-btn-lg layui-btn-danger" style="width:300px;height:54px;font-size:18px;background: #ff4f4c;">立即制作专业简历</button></div>
+                            <div style="margin-top: 50px;"><button id="dz_btn0" class="layui-btn layui-btn-lg layui-btn-danger" style="width:300px;height:54px;font-size:18px;background: #ff4f4c;">立即制作专业简历</button></div>
                         </div>
 
 
@@ -343,6 +287,19 @@
                     </div>
                 </div>
 
+                <div id="tx_box1" class="box" style="width: 400px;height: 400px; position: absolute;z-index: 1001;left: 37%;display: none;">
+                        <div class="box_m" style="top:3%; height: auto; border: 0">
+                                <img src="img/weixin.png" alt="">
+                                <div class="box_m1"  style="background: #fff;">
+                                    <i class="layui-icon layui-icon-login-wechat" style="font-size: 28px; color: #62b900;"></i>  
+                                    <span style="color: #757575;">微信扫码 快速登录</span>
+                                </div>
+                        </div>
+                        <div class="box_d" style="margin-top: 40px;">
+                            <a href="zhuce.html">其他方式注册/登录</a>
+                        </div>
+                    </div>
+
                 <div class="layui-row" style="width: 100%">
                     <div class="layui-col-md6 layui-col-xs12 " >
                         <img src="layui\image\anliku.png"
@@ -357,16 +314,30 @@
                         <div style="width: 85px;height:24px;"><p style="text-align: center; color: red;background:#ffe6e6;border-radius:10px">简单</p></div>
                         <div><p style="font-size: 28px;margin-top: 5px;color: #404040;">详尽的引导、示例，填空就能<br/>写出的好简历</p></div>
                         <div><p style="color: rgb(95, 95, 95);margin-top: 20px">跟随引导一步一步整理你的经历，每一步都会为你提供专业的<br/>建议和例子，彻底告别“废话”和“写不出来”。<br/>只需要填空就能写出 HR 真正关心的问题，突出你的能力和优<br/>势。</p></div>
-                        <div style="margin-top: 50px;"><button class="layui-btn layui-btn-lg layui-btn-danger" style="width:300px;height:54px;font-size:18px;background: #ff4f4c;">立即制作专业简历</button></div>
+                        <div style="margin-top: 50px;"><button id="dz_btn1" class="layui-btn layui-btn-lg layui-btn-danger" style="width:300px;height:54px;font-size:18px;background: #ff4f4c;">立即制作专业简历</button></div>
                     </div>
-          
                 </div>
+
+                
+                <div id="tx_box2" class="box" style="width: 400px;height: 400px; position: absolute;z-index: 1001;left: 37%;display: none;">
+                        <div class="box_m" style="top:3%; height: auto; border: 0">
+                                <img src="img/weixin.png" alt="">
+                                <div class="box_m1"  style="background: #fff;">
+                                    <i class="layui-icon layui-icon-login-wechat" style="font-size: 28px; color: #62b900;"></i>  
+                                    <span style="color: #757575;">微信扫码 快速登录</span>
+                                </div>
+                        </div>
+                        <div class="box_d" style="margin-top: 40px;">
+                            <a href="zhuce.html">其他方式注册/登录</a>
+                        </div>
+                    </div>
+
                 <div class="layui-row" style="width: 100%">
                     <div class="layui-col-md5 layui-hide-xs  " style=" margin-top: 100px; ">
                         <div style="width: 85px;height:24px;"><p style="text-align: center; color:#FF4F4C;background:#ffe6e6;border-radius:10px">专业</p></div>
                         <div><p style="font-size: 28px;margin-top: 5px;color: #404040;">即时反馈和简历提示建议，<br/>修改一下，直达梦想工作</p></div>
                         <div><p style="color: rgb(95, 95, 95);margin-top: 20px">自动简历优化反馈，迅速帮你了解简历上的不足，更能帮你快<br/>速分析和理想工作的差距。<br/>更有业界知名的导师辅导，让全球名企的实战经验，帮你大幅<br/>提升获得面试的概率。<br/>立即制作</p></div>
-                        <div style="margin-top: 50px;"><button class="layui-btn layui-btn-lg layui-btn-danger" style="width:300px;height:54px;font-size:18px;background: #ff4f4c;">立即制作专业简历</button></div>
+                        <div style="margin-top: 50px;"><button id="dz_btn2" class="layui-btn layui-btn-lg layui-btn-danger" style="width:300px;height:54px;font-size:18px;background: #ff4f4c;">立即制作专业简历</button></div>
                     </div>
                     <div class="layui-col-md6 layui-col-xs12 layui-col-md-offset1" >
                         <img src="layui\image\jianlizhuanye.png"
@@ -483,7 +454,7 @@
                                      </div>
                               </div> -->
                         </div>
-                        <div class="layui-row  layui-hide-xs" style="margin-top: 50px" >
+                        <div class="layui-row  layui-hide-xs" style="margin: 50px 0 100px" >
                             <img src="layui\image\last.png"
                             width="100%"
                             >
@@ -619,6 +590,232 @@
     </div>
 
 
+
+    <a class="kefu site-demo-button" id="layerDemo" >
+            <button data-method="offset" data-type="rb" class="layui-btn layui-btn-normal" style="background: 0">
+                <img src="img/新客服_1530523129_941.png" alt="">
+            </button>
+          </a>
+        
+        
+
+          <script type="text/javascript">
+            window.onload=function(){
+                let dzbtn0=document.getElementById("dz_btn0");
+                let dzbtn=document.getElementById("dz_btn");
+                let dzbtn1=document.getElementById("dz_btn1");
+                let dzbtn2=document.getElementById("dz_btn2");
+                let txbox0=document.getElementById("tx_box0");
+                let txbox=document.getElementById("tx_box");
+                let txbox1=document.getElementById("tx_box1");
+                let txbox2=document.getElementById("tx_box2");
+
+
+                // obtn.onclick=function(){
+                    
+                    $("#moban_btn,#moban_btn2,#moban_btn,#moban_btn4,#moban_btn5,#moban_btn6,#moban_btn7,#moban_btn8,#moban_btn9,#moban_btn10,#moban_btn12,#moban_btn12,#moban_btn13,#moban_btn14,#moban_btn15,#moban_btn16").click(function(){
+                        //获取页面的高度和宽度
+                    var sheight=document.documentElement.scrollHeight;
+                    var swidth=document.documentElement.scrollWidth;
+    
+                    // 可视区域的高度
+                    var wheight=document.documentElement.clientHeight;
+    
+    
+                    // 遮罩层
+                    var omask=document.createElement("div");
+                        omask.id="mask";
+                        omask.style.height=sheight+"px";
+                        omask.style.width=swidth+"px";
+                        document.body.appendChild(omask);
+                    
+                    var mask_img=document.createElement("div");
+                        mask_img.id="mask_img";
+                        mask_img.innerHTML="<div class='mask_con' id='mask_c'><div id='close'></div></div>"
+                        document.body.appendChild(mask_img);
+                        
+                    var mask_c=document.getElementById('mask_c');
+    
+                    var mask_con_btn=document.createElement("div");
+                        mask_con_btn.id="mask_con_btn";
+                        mask_con_btn.innerHTML="<a href='zhuce.html' class='layui-btn layui-btn-primary'>使用模板</a>"
+                        mask_c.appendChild(mask_con_btn);
+                        // 获取 mask_img 的宽度和高度
+    
+                    var dheight=mask_img.offsetHeight;
+                    var dwidth=mask_img.offsetWidth;
+    
+                    var close=document.getElementById("close");
+                    close.onclick=function(){
+                        document.body.removeChild(omask);
+                        document.body.removeChild(mask_img);
+                    }
+                    })
+             
+              
+                    
+                dzbtn0.onclick=function(){
+                    var sheight=document.documentElement.scrollHeight;
+                    var swidth=document.documentElement.scrollWidth;
+    
+                    // 可视区域的高度
+                    var wheight=document.documentElement.clientHeight;
+    
+                    var omask=document.createElement("div");
+                        omask.id="mask";
+                        omask.style.height=sheight+"px";
+                        omask.style.width=swidth+"px";
+                        document.body.appendChild(omask);
+                        txbox0.style.display="block";
+                        omask.onclick=function(){
+                        document.body.removeChild(omask);
+                        txbox0.style.display="none";
+                    }
+
+                    
+    
+                    
+                }
+
+                dzbtn.onclick=function(){
+                    var sheight=document.documentElement.scrollHeight;
+                    var swidth=document.documentElement.scrollWidth;
+    
+                    // 可视区域的高度
+                    var wheight=document.documentElement.clientHeight;
+    
+                    var omask=document.createElement("div");
+                        omask.id="mask";
+                        omask.style.height=sheight+"px";
+                        omask.style.width=swidth+"px";
+                        document.body.appendChild(omask);
+                        txbox.style.display="block";
+                        omask.onclick=function(){
+                        document.body.removeChild(omask);
+                        txbox.style.display="none";
+                    }
+
+                    
+    
+                    
+                }
+
+                dzbtn1.onclick=function(){
+                    var sheight=document.documentElement.scrollHeight;
+                    var swidth=document.documentElement.scrollWidth;
+    
+                    // 可视区域的高度
+                    var wheight=document.documentElement.clientHeight;
+    
+                    var omask=document.createElement("div");
+                        omask.id="mask";
+                        omask.style.height=sheight+"px";
+                        omask.style.width=swidth+"px";
+                        document.body.appendChild(omask);
+                        txbox1.style.display="block";
+                        omask.onclick=function(){
+                        document.body.removeChild(omask);
+                        txbox1.style.display="none";
+                    }
+
+                    
+    
+                    
+                }
+
+                dzbtn2.onclick=function(){
+                    var sheight=document.documentElement.scrollHeight;
+                    var swidth=document.documentElement.scrollWidth;
+    
+                    // 可视区域的高度
+                    var wheight=document.documentElement.clientHeight;
+    
+                    var omask=document.createElement("div");
+                        omask.id="mask";
+                        omask.style.height=sheight+"px";
+                        omask.style.width=swidth+"px";
+                        document.body.appendChild(omask);
+                        txbox2.style.display="block";
+                        omask.onclick=function(){
+                        document.body.removeChild(omask);
+                        txbox2.style.display="none";
+                    }
+
+                    
+    
+                    
+                }
+                    
+            }
+                
+                
+             
+                
+        </script>
+          
+          
+          <script>
+            layui.use('layer', function () { //独立版的layer无需执行这一句
+                var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+        
+                //触发事件
+                var active = {
+                  setTop: function () {
+                      var that = this;
+        
+                  }
+                  , offset: function (othis) {
+                      var type = othis.data('type')
+                          , text = othis.text();
+        
+                    layer.open({
+                      type: 1
+                      , offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+                      , id: 'layerDemo' + type //防止重复弹出
+                      , title: ['超级简历机器人', 'font-size:14px; color:#fff; background: #ff4f4c;']
+                      , content: `<div style="width: 364px; height:512px; margin: 0 auto;">
+                          <div style="height: 364px; padding-top: 30px; background: #F5F8FA; padding-left: 12px;
+                          padding-right: 12px;z-index:100;">
+                              <dl style="">
+                                  <dt style="font-size: 12px;color: rgba(36,46,51,.4); padding-left: 10px">超级简历机器人18:40:52 </dt>
+                                  <dd style=" margin-top: 5px; padding: 5px 0 5px 10px ;background: #fff; border-radius: 20px; display: inline-block">您好，很高兴为您服务！</dd>
+                              </dl>
+                          </div>
+        
+                          <div class="clearfix" style="padding: 12px 14px; font-size: 14px;">
+                              <div>
+                                  <i style="color: #C7C6C6; font-size: 22px;" class="layui-icon layui-icon-praise"></i>
+                                  <a style="color: #C7C6C6; float: right" href="">转人工</a>
+                              </div>
+                              <input style="width: 80%; border: 0; overflow: hidden; overflow-wrap: break-word; height: 40px;" type="text" placeholder="很高兴为您服务，请描述您的问题">
+                              <button style="height: 28px; line-height: 23px; background: rgb(245, 245, 245); float: right;padding: 3px 9px; margin-top: 27px;" class="layui-btn layui-btn-primary">发送</button>
+                          </div>
+        
+        
+                          <div style="background-color: #F7F7F7; border-top: 1px solid #eee; height: 30px;
+                          line-height: 30px; text-align: center">
+                              <a style="color: #C7C6C6; font-size: 12px;" href="">Udesk提供客服软件支持</a>
+                          </div>
+                      </div>`
+                      , anim: 2
+                      ,area: ['364px', '572px']
+                      , shade: 0 //不显示遮罩
+                      , yes: function () {
+                          layer.closeAll();
+                      }
+                    });
+                  }
+                };
+        
+                $('#layerDemo .layui-btn').on('click', function () {
+                    var othis = $(this), method = othis.data('method');
+                    active[method] ? active[method].call(this, othis) : '';
+                });
+        
+            });
+          </script>
+
+
     <script>
         $(document).ready(function(){
             var oImg0=document.getElementById("app_btn");
@@ -684,7 +881,6 @@
     $(document).ready(function(){
         var oImg0=document.getElementById("app_btn");
         var oImg=document.getElementById("img_1");
-        console.log(oImg);
         $('#weixin_btn').click(function(){
             oImg.src="img/default_wx_qr.png";
             oImg0.style.background="#fff";

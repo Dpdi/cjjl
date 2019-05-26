@@ -417,12 +417,12 @@ color: #fff;
     display: block;
     position: fixed;
     box-sizing: border-box;
-    font-size: 13px; color:
-    rgb(255, 255, 255);
+    font-size: 13px; 
+    color:rgb(255, 255, 255);
     text-align: center;
     cursor: pointer;
     text-decoration: none;
-    z-index: 1000000000;
+    z-index: 89;
     right: 0px;
     bottom: 0px;
     width: 64px;

@@ -65,6 +65,7 @@ a {
 .xiamian{
     width: 70%;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 .xiamian fieldset legend{
     color: #9c9c9c;

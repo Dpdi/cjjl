@@ -24,5 +24,75 @@
             <a href="zhuce.html">其他方式注册/登录</a>
         </div>
     </div>
+
+
+
+    <a class="kefu site-demo-button" id="layerDemo" >
+            <button data-method="offset" data-type="rb" class="layui-btn layui-btn-normal" style="background: 0">
+                <img src="img/新客服_1530523129_941.png" alt="">
+            </button>
+          </a>
+        
+        
+          <script>
+            layui.use('layer', function () { //独立版的layer无需执行这一句
+                var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+        
+                //触发事件
+                var active = {
+                  setTop: function () {
+                      var that = this;
+        
+                  }
+                  , offset: function (othis) {
+                      var type = othis.data('type')
+                          , text = othis.text();
+        
+                    layer.open({
+                      type: 1
+                      , offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+                      , id: 'layerDemo' + type //防止重复弹出
+                      , title: ['超级简历机器人', 'font-size:14px; color:#fff; background: #ff4f4c;']
+                      , content: `<div style="width: 364px; height:512px; margin: 0 auto;">
+                          <div style="height: 364px; padding-top: 30px; background: #F5F8FA; padding-left: 12px;
+                          padding-right: 12px;z-index:90">
+                              <dl style="">
+                                  <dt style="font-size: 12px;color: rgba(36,46,51,.4); padding-left: 10px">超级简历机器人18:40:52 </dt>
+                                  <dd style=" margin-top: 5px; padding: 5px 0 5px 10px ;background: #fff; border-radius: 20px; display: inline-block">您好，很高兴为您服务！</dd>
+                              </dl>
+                          </div>
+        
+                          <div class="clearfix" style="padding: 12px 14px; font-size: 14px;">
+                              <div>
+                                  <i style="color: #C7C6C6; font-size: 22px;" class="layui-icon layui-icon-praise"></i>
+                                  <a style="color: #C7C6C6; float: right" href="">转人工</a>
+                              </div>
+                              <input style="width: 80%; border: 0; overflow: hidden; overflow-wrap: break-word; height: 40px;" type="text" placeholder="很高兴为您服务，请描述您的问题">
+                              <button style="height: 28px; line-height: 23px; background: rgb(245, 245, 245); float: right;padding: 3px 9px; margin-top: 27px;" class="layui-btn layui-btn-primary">发送</button>
+                          </div>
+        
+        
+                          <div style="background-color: #F7F7F7; border-top: 1px solid #eee; height: 30px;
+                          line-height: 30px; text-align: center">
+                              <a style="color: #C7C6C6; font-size: 12px;" href="">Udesk提供客服软件支持</a>
+                          </div>
+                      </div>`
+                      , anim: 2
+                      ,area: ['364px', '572px']
+                      , shade: 0 //不显示遮罩
+                      , yes: function () {
+                          layer.closeAll();
+                      }
+                    });
+                  }
+                };
+        
+                $('#layerDemo .layui-btn').on('click', function () {
+                    var othis = $(this), method = othis.data('method');
+                    active[method] ? active[method].call(this, othis) : '';
+                });
+        
+            });
+          </script>
 </body>
 </html>
